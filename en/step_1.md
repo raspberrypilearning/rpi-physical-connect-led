@@ -1,122 +1,22 @@
-# New project
+## Connecting LEDs to the Raspberry Pi
 
-Each project contains a set of directories for each language, you're set up now with an `en` directory that contains the necessary files to get you going.
+The Raspberry Pi computer has a number of General Purpose Input/Output pins, that can be used to interact with electronic components. You can learn more about them by looking at [this resource](rpi-gpio-pins).
 
-* [meta.yml](#metayml)
-* [Steps - step_1.md, step_2.md, etc](#steps)
+LED stands for Light Emitting Diode. It is an electronic components that emits light current flows through it. The **diode** part of the name tells us that it will only conduct electricity in one direction, so you need to be careful how you connect them to your circuits.
 
+You need to use a resistor when wiring an LED to a Raspberry Pi, to make sure the LED doesn't blow. You can find out how to work out which resistor to use by looking at [this resource](generic-physical-led-calcs)
 
-## meta.yml
+To connect and LED to the resistor, place the LED and resistor in series with each other. You can use a breadboard to do this, use jumper leads, or solder them. It doesn't matter which leg of the LED the resistor is connected to.
 
-The `meta.yml` file sets lots of basic information for the project.
+![breadboard](images/breadboard.jpg)
+![jumper](images/jumper.jpg)
+![solder](images/solder.jpg)
 
-``` yml
-title: The title of the project
-hero_image: images/banner.png # The image used on the listing view
-description: Project description # Used on the listing view
-published: false # A boolean - `true` or`false` - that controls whether the project will appear on the listing view
-ingredient: false # A boolean - `true` or`false` - that controls whether the project will appear on the listing view if published
-steps: # A list of all the steps
-  - title: How to get started # Used as the sidebar title for the step
-    duration: 60 # Not used yet
-```
+Once the LED and resistor are in series with each other, you can use jumper leads to connect the circuit to the Raspberry Pi. The long leg of the LED should connect to a numbered GPIO pin and the short leg to a GND pin, as shown in the two diagrams below.
 
-## Steps
+![led1](images/led1.png)
+![led2](images/led2.png)
 
-* [Links](#links)
-* [Resources](#resources)
-* [Images](#images)
-* [Challenges](#challenges)
-* [Definitions](#definitions)
-* [Hints](#hints)
-* [Collapsed ingredients](#collapsed-ingredients)
+If you want to test that your LED is working correctly, before programming it to turn on, you can connect it directly to the 3.3V pin on the Raspberry Pi
 
-Project steps are written in the [Kramdown](https://kramdown.gettalong.org/) variety of markdown. There is a [quick reference guide](https://kramdown.gettalong.org/quickref.html) and [full syntax documentation](https://kramdown.gettalong.org/syntax.html). A [custom kramdown extension](https://github.com/RaspberryPiFoundation/kramdown_rpf) is used for hints, challenges & collapsed ingredients.
-
-### Links, resources & images
-
-See [kramdown documentation](https://kramdown.gettalong.org/quickref.html#links-and-images) for more details.
-
-#### Links
-
-A [link](http://kramdown.gettalong.org) to the kramdown homepage.
-
-You can add  a link that opens in a new browser window/tab [like this](https://google.com/){:target="_blank"}
-
-#### Resources
-
-A [link to a file in the resources directory](resources/worksheet.pdf){:download='filename.pdf'}. The download part will make the file automatically download rather than be rendered in the browser, the filename you'd like the file to be saved with is the second bit after the `=`. The `/slash learning` application will ensure the resource is available.
-
-#### Images
-
-![Banner image](images/banner.png) - the link text becomes the alternative text for the image. The `/slash learning` application will ensure the image is available.
-
-#### Challenges
-
-``` markdown
---- challenge ---
-
-## Challenge: Improving your drum
-
-* Any markdown in here
-* will be parsed as normal
-
---- /challenge ---
-```
-
-
-### Definitions
-
-Definitions can be written using HTML abbreviations, which are a standard part of [kramdown](https://kramdown.gettalong.org/quickref.html#abbreviations)
-
-```
-To do this you might require a variable or a two word definition.
-
-*[variable]: An object that has a name and stores a value.
-
-*[two word]: Definitions are markdown, and can have [links](http://kramdown.gettalong.org) etc
-```
-
-
-### Hints
-
-A header for the hint, and all the html markup for hints will be automatically added.
-
-```
---- hints ---
---- hint ---
-
-Here's a hint of how to do this project.
-
-Any markdown you like within a hint:
-* item 1
-* item 2
-
---- /hint ---
---- hint ---
-Hint 2
-
---- /hint ---
---- hint ---
-
-Hint 3
---- /hint ---
---- hint ---
-Hint 4
---- /hint ---
-
---- /hints ---
-```
-
-### Collapsed ingredients
-
-Set the title and the image from within the `collapse` area. The image must exist in **this** project, not the ingredient.
-
---- collapse ---
----
-title: Downloading and installing the Raspberry Pi software
----
-
-[[[generic-scratch-new-project]]]
-
---- /collapse ---
+![led3](images.led3.png)
