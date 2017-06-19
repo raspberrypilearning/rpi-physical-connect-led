@@ -19,4 +19,4 @@ Once the LED and resistor are in series with each other, you can use jumper lead
 
 If you want to test that your LED is working correctly, before programming it to turn on, you can connect it directly to the 3.3V pin on the Raspberry Pi
 
-![led3](images.led3.png)
+![led3](images/led3.png)
