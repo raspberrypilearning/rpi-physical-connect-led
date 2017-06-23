@@ -1,10 +1,12 @@
-title: Coonecting LEDs to a Raspberry Pi
+title: Conecting LEDs to a Raspberry Pi
 hero_image: images/banner.png
-description: rpi-physical-connect-led description
-original_url: https://codeclubprojects.org/en-GB/scratch/rock-band
+description: Connect and LED to a Raspberry Pi
+original_url: 
 theme: cc-prototype
 duration: 1
-published: false
-ingredient: false
+listed: false
+ingredient: true
+interests: "physical computing"
+technologies: "physical computing"
 steps:
   - title: Connecting LEDs to a Raspberry Pi
