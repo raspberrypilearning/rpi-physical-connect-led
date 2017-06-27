@@ -1,4 +1,4 @@
-The Raspberry Pi computer has a number of General Purpose Input/Output pins, that can be used to interact with electronic components. You can learn more about them by looking at [this resource](../rpi-gpio-pins){:target="_blank"}.
+The Raspberry Pi computer has a number of General Purpose Input/Output pins, that can be used to interact with electronic components. You can learn more about them by looking at [this resource](../../rpi-gpio-pins){:target="_blank"}.
 
 LED stands for Light Emitting Diode. It is an electronic components that emits light current flows through it. The **diode** part of the name tells us that it will only conduct electricity in one direction, so you need to be careful how you connect them to your circuits.
 
