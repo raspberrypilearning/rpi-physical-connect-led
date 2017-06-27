@@ -2,7 +2,7 @@ The Raspberry Pi computer has a number of General Purpose Input/Output pins, tha
 
 LED stands for Light Emitting Diode. It is an electronic components that emits light current flows through it. The **diode** part of the name tells us that it will only conduct electricity in one direction, so you need to be careful how you connect them to your circuits.
 
-You need to use a resistor when wiring an LED to a Raspberry Pi, to make sure the LED doesn't blow. You can find out how to work out which resistor to use by looking at [this resource](../generic-physical-led-calcs){:target="_blank"}.
+You need to use a resistor when wiring an LED to a Raspberry Pi, to make sure the LED doesn't blow. You can find out how to work out which resistor to use by looking at [this resource](../../generic-physical-led-calcs){:target="_blank"}.
 
 - To connect and LED to the resistor, place the LED and resistor in series with each other. You can use a breadboard to do this, use jumper leads, or solder them. It doesn't matter which leg of the LED the resistor is connected to.
 
