@@ -10,7 +10,7 @@ You need to use a resistor when wiring an LED to a Raspberry Pi to make sure the
 	![jumper](images/jumper.jpg)
 	![solder](images/solder.jpg)
 
-- Once the LED and resistor are in series with each other, you can use jumper leads to connect the circuit to the Raspberry Pi. The long leg of the LED should connect to a numbered GPIO pin and the short leg to a ground pin (labelled **GND**), as shown in the two diagrams below.
+- Once the LED and resistor are in series with each other, you can use jumper leads to connect the circuit to the Raspberry Pi. The long leg of the LED should connect to a numbered GPIO pin (in this case **17**) and the short leg to a ground pin (labelled **GND**), as shown in the two diagrams below.
 
 	![led1](images/led1.png)
 	![led2](images/led2.png)
